@@ -1,0 +1,45 @@
+Goal: ADC input @ ~600mVp-p @50Ohm for ADC FS
+---------------------------------------------
+
+
+Modification:
+=============
+1. R3,R5,R8,R17 - Remove
+2. R25 - Replace with 6.8nF capacitor 
+3. R17 OR R3/R25 node – Add 56ohm resistor
+4. R5 – add the 0 ohm resistor taken from R25
+5. R9 & R11 – Replace with 47ohm resistor
+6. C6lpf - on the AD9226 side and across R9/11 add 160pF 
+ - Provides 1-pole -3db@10Mhz LPF & ADC kickback suppression
+7. R2 & R14 – Replace with 2k2 – Recommended gain
+8. C2a/b - add 2.2pF capacitor in parallel on top of R2 & R14
+ - Stability and slight LPF roll off
+9. R6 & R13 Replace with 270ohm resistors
+10. C3 - 6.8nF lifted at 45 deg for series with R16 - added next 
+11. R16a/b - Two 51ohm resistors in parallel, one on top
+ - Add the resistors to ground side pad (AD9226 Text side) 
+ and lifted C3 in previous step. Provides DC offset balance.
+
+Configuration notes:
+--------------------
+*Target ADC input level for 600 mVp-p 
+ - Gain set to ~4x gain
+* R2 / R14 = 2.2 kΩ
+* R6 & R14 270ohm - Do not change
+SNR:~70db
+THD/SINAD:~98/70
+ENOB:~11
+Gain table - R2 & R14 Values:
+1x 560 - vin=2.5vp-p
+1.2x 680 - vin=2vp-p
+1.7x 910 - vin=1.5vp-p
+2.5x 1.2K - vin=1vp-p 
+3x 1k6 - vin=0.90vp-p 
+4x 2K2 - vin=0.65vp-p
+4.1x 2k4 - vin=0.60vp-p ---- Use
+5x 3k - Not recommended SNR ~60
+Selected for SNR/ENOB and lowest noise 
+Explanation:
+Higher value rf/rg resistors, higher johnson noise.
+Analogue Devices AD8138 does not 
+recommend rf >=5k, I suggest rf >=3K
