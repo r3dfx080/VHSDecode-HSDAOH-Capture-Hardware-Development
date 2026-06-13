@@ -39,8 +39,7 @@
 
 Stock variant
 
-![stock-board-schematic.jpg](assets/schematic-stock.jpg)
-
+![schematic-stock.jpg](assets/schematic-stock.JPG)
 
 ### Gain setup
 
@@ -55,7 +54,7 @@ Stock variant
 
 After gain setup
 
-![gain-mod-board-schematic.jpg](assets/schematic-gain-mod.jpg)
+![gain-mod-board-schematic.jpg](assets/schematic-gain-mod.JPG)
 
 
 ### LPF and other improvements
@@ -64,7 +63,7 @@ After gain setup
 2. **C6lpf** — **Add** on the AD9226 side and **across R9/R11** add 160pF _- Provides 1-pole -3db@10MHz LPF & ADC kickback suppression_ 
 3. **C2a/b** — **Add** 2.2pF capacitor **in parallel** on top of **R2 & R14** _- Stability and slight LPF roll off_ 
 
-![gain-mod-board-schematic.jpg](assets/schematic-gain-lpf-mod.jpg)
+![gain-mod-board-schematic.jpg](assets/schematic-gain-lpf-mod.JPG)
 
 ### Board view
 
