@@ -37,33 +37,40 @@
 
 ## Modification
 
-### Modification steps
+Stock variant
+
+![stock-board-schematic.jpg](assets/schematic-stock.jpg)
+
+
+### Gain setup
 
 1. **R3, R5, R8, R17** - **Remove** 
-2. **R25** - **Replace** with 6.8nF capacitor 
-3. **R17 OR R3/R25** node — **Add** 56OΩ resistor 
-4. **R5** — **Add** the 0Ω resistor taken from R25 
-5. **R9 & R11** — **Replace** with 47Ω resistor 
-6. **C6lpf** — **Add** on the AD9226 side and **across R9/R11** add 160pF _- Provides 1-pole -3db@10MHz LPF & ADC kickback suppression_ 
-7. **R2 & R14** — **Replace** with 2.2kΩ — Recommended gain 
-8. **C2a/b** — **Add** 2.2pF capacitor **in parallel** on top of **R2 & R14** _- Stability and slight LPF roll off_ 
-9. **R6 & R13** — Replace with 270Ω resistors 
-10. **C3** — 6.8nF lifted at 45 deg for series with R16 _- added next_ 
-11. **R16a/b** — **Add** two 51Ω resistors in parallel, one on top _- Add the resistors to ground side pad (AD9226 Text side) and lifted C3 in previous step. Provides DC offset balance_ 
+2. **R17 OR R3/R25** node — **Add** 56OΩ resistor 
+3. **R5** — **Add** the 0Ω resistor taken from R25 
+4. **R9 & R11** — **Replace** with 47Ω resistor 
+5. **R2 & R14** — **Replace** with 2.2kΩ _ — Recommended gain_
+6. **R6 & R13** — Replace with 270Ω resistors 
+7. **R16** — **Replace** with 27Ω resistor _- Provides DC offset balance_ 
+8. **C3** — **Add** 6.8nF capacitor lifted at 45 deg in series with R16
+
+After gain setup
+
+![gain-mod-board-schematic.jpg](assets/schematic-gain-mod.jpg)
+
+
+### LPF and other improvements
+
+1. **R25** - **Replace** with 6.8nF capacitor 
+2. **C6lpf** — **Add** on the AD9226 side and **across R9/R11** add 160pF _- Provides 1-pole -3db@10MHz LPF & ADC kickback suppression_ 
+3. **C2a/b** — **Add** 2.2pF capacitor **in parallel** on top of **R2 & R14** _- Stability and slight LPF roll off_ 
+
+![gain-mod-board-schematic.jpg](assets/schematic-gain-lpf-mod.jpg)
 
 ### Board view
 
 Stock
 
 ![ADC9226-stock-board-photo.jpg](assets/ADC9226-stock-board-photo.jpg)
-
-Modded
-
-![ADC9226-Module-Mod-MarkUp-R2.jpg](assets/ADC9226-Module-Mod-MarkUp-R2.jpg)
-
-### Schematic
-
-![AD9226-Module-AD8138-R02-LTSpice.jpg](assets/AD9226-Module-AD8138-R02-LTSpice.jpg)
 
 ### BOM
 
