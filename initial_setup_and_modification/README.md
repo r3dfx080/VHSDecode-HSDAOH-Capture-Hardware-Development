@@ -53,6 +53,12 @@
 
 ### Board view
 
+Stock
+
+![ADC9226-stock-board-photo.jpg](assets/ADC9226-stock-board-photo.jpg)
+
+Modded
+
 ![ADC9226-Module-Mod-MarkUp-R2.jpg](assets/ADC9226-Module-Mod-MarkUp-R2.jpg)
 
 ### Schematic
