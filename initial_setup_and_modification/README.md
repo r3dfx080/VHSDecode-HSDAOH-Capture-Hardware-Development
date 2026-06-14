@@ -75,10 +75,10 @@
 
 | Type       | Value    | Ref        | Quantity |
 |------------|----------|------------|----------|
+| Resistor   | 27 Ohm   | R16        | 1        |
 | Resistor   | 47 Ohm   | R9, R11    | 2        |
-| Resistor   | 51 Ohm   | R16        | 2        |
+| Resistor   | 56 Ohm    | R17/R3-R25 | 1        |
 | Resistor   | 270 Ohm    | R6, R13    | 2        |
-| Resistor   | 560 Ohm    | R17/R3-R25 | 1        |
 | _Resistor_ | _2.2k Ohm_ | _R2, R14_  | _2_        |
 | Capacitor  | 6.8 nF   | R16        | 1        |
 | Capacitor  | 2.2 pF   | R2, R14    | 2        |
