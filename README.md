@@ -62,6 +62,8 @@ Additional Items needed:
 > [!CAUTION]
 > The PCM1802 board needs MODE0 bridged *and* connected to 3.3V with a wire (Those boards have a design error)
 
+![pcm-module-mode.jpg](assets/pcm-module-mode.jpg)
+
 - 1x [DVI-Sock](https://github.com/Wren6991/Pico-DVI-Sock) for a flush fit with the pcb edge, otherwise the adafruit DVI sock works fine too
 - 2x 15pin 2.54mm pin-socket header
 
