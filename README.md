@@ -25,7 +25,7 @@ I recommended following Sev's excellent parts list and approach - choose build y
 - 1x This PCB (Send the Gerber .zip to JLC, PCBWay, ..)
 - 1x Raspberry Pi Pico 2
 - 1x AD9226: https://aliexpress.com/item/1005003038271519.html
-- 1x PCM1802: https://aliexpress.com/item/1005006412873984.html
+- 1x PCM1802: https://aliexpress.com/item/1005006412873984.html - take note below - important!
 - 2x RCA-105 or RCA-106: https://aliexpress.com/item/1005006152724809.html
 - 1x PJ-324M 5P: https://aliexpress.com/item/1005006146950431.html
 - 1x 3pin 2.54mm pin header horizontal for the headswitch/overflow selection jumper
@@ -53,9 +53,11 @@ I recommended following Sev's excellent parts list and approach - choose build y
 - VCR Head tap
 - SMA or BNC 50ohm Coax cable (for connection to VCR head tap amplifier and this capture board
 - RCA-to-RCA Stereo audio cable, of  at least 0.5m length
-- Optional: 10MHz Low pass filter and hassle Amp gain setting - one (Digital) attenuator with attenuation steps of atleast -5db, -15db, -20db
+- Optional: 10MHz Low pass filter and hassle Amp gain setting - one (Digital) attenuator with attenuation steps
+            of atleast -5db, -15db, -20db
+
 Notes:
-**Important**_The PCM1802 board needs MODE0 (MODE1 only with previous HSDAOH releases) bridged *and* connected to 3.3V with a wire (Those boards have a design error):
+**Important** The PCM1802 board needs MODE0 (MODE1 only with previous HSDAOH releases) bridged *and* connected to 3.3V with a wire (Those boards have a design error):
 NOTE: Picture shows the configuration for the older firmware, now only MODE0 needs to be bridged and connected to 3.3V
 - 1x DVI-Sock: https://github.com/Wren6991/Pico-DVI-Sock for a flush fit with the pcb edge, otherwise the adafruit DVI sock works fine too
 - 2x 15pin 2.54mm pin-socket header
@@ -63,18 +65,23 @@ NOTE: Picture shows the configuration for the older firmware, now only MODE0 nee
 
 ### 2. Modify the AD9226/AD8138 Module
 ```
-Refer to the guide in this repo. Recommend full modification - or - modify for gain & VHS-Decode ready, is your choice.
+Refer to the guide in this repo.
+Recommend full modification - or - modify for gain & VHS-Decode ready, is your choice.
+
 ```
 
 ### 2. Flash the RPI PICO 3
 ```
-- [Pico 2 clipping LED firmware](https://github.com/machcnz/hsdaoh-rp2350/releases/tag/Firmware-External-ADC) - ready to flash .uf2 firmware - with Power LED ADC Clipping indicator
+- Pico 2 clipping LED firmware - see https://github.com/machcnz/hsdaoh-rp2350/releases/tag/Firmware-External-ADC
+
 ```
 
-### 3. Software install
+### 3. Software install - misrc GUI & driver
 ```
 - Use the ready to install release of HSDAOH or build and install
-  [misrc-gui for hsdaoh](https://github.com/machcnz/HSDAOH-MISRC-GUI) -- vhs-decode repo link to update this link soon.
+  For Windows release of https://github.com/machcnz/HSDAOH-MISRC-GUI) -- vhs-decode repo link to update this link soon.
+- Install MS2130 Driver - zadig included in release with instruction readme.
+
 ```
 
 ### 3. Connect, test & capture
