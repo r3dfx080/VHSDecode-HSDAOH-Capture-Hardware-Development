@@ -35,7 +35,7 @@ I recommended following Sev's excellent parts list and approach - choose build y
 - 1x 3pin 2.54mm pin-socket header (remove the center pin for connecting R/L of the PCM1802)
 
 
-**No surface mount component variant**
+**PLUS: No surface mount component variant**
 - 1x DVI-Sock - This ready to use HDMI board, no component soldering is necessary.
                 To obtain, order the adafruit DVI sock or Aliexpress have these
 - 2x 15pin 2.54mm pin-socket header
