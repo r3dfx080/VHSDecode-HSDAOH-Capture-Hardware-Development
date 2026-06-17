@@ -44,8 +44,8 @@
 ### Gain setup
 
 1. **R3, R5, R8, R17** - **Remove** 
-2. **R17 OR R3/R25** node — **Add** 56Ω resistor 
-3. **R5** — **Add** the 0Ω resistor taken from R25 
+2. **R8 or R17 or R3** — **Add** 56Ω resistor 
+3. **R5** — **Add** the 0Ω resistor _- Optionally taken from R25_ 
 4. **R9 & R11** — **Replace** with 47Ω resistor 
 5. **R2 & R14** — **Replace** with 2.2kΩ _- Recommended gain_ 
 6. **R6 & R13** — Replace with 270Ω resistors 
