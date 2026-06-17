@@ -53,7 +53,7 @@ I recommended following Sev's excellent parts list and approach - choose build y
 - VCR Head tap
 - SMA or BNC 50ohm Coax cable (for connection to VCR head tap amplifier and this capture board
 - RCA-to-RCA Stereo audio cable, of  at least 0.5m length
-- Optional: 10MHz Low pass filter and hassle Amp gain setting - one (Digital) attenuator with attenuation steps
+- Optional: 10MHz Low pass filter and for less hassle with Amp gain setting & adjustment - one (Digital) attenuator with attenuation steps
             of atleast -5db, -15db, -20db
 
 Notes:
