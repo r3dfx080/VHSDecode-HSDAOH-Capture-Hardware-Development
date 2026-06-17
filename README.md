@@ -16,6 +16,7 @@ This guide assumes a basic understand of the concepts, hardware & software optio
 
 ### 1. Build a single AD9226 + Single PCM1802 - for RF Video capture and Analogue (Stereo) Audio
 Credits to sev5000 - [Detailed board build, PCB Gerber files for manufacturer and components needed](https://github.com/Sev5000/Pico2_12bitADC_PCMAudio)
+<br>
 This Capture devce uses a USB 3.0 HDMI capture stick based on the MacroSilicon MS2130/MS2130S as an interface to tranfer and capture 
 the Analogue-to-digital converter stream to PC or MAC.
 
