@@ -12,7 +12,7 @@ Sharing of VHS-Decode hardware development with a focus standardizing the low co
 
 ## The high level steps to get up and running.
 This guide assumes a basic understand of the concepts, hardware & software options and usage of the VHS decode Capture method.
-- [Start here first](https://github.com/oyvindln/vhs-decode/wiki)
+- [Otherwise, its best to start here first](https://github.com/oyvindln/vhs-decode/wiki)
 
 ### 1. Build a single AD9226 + Single PCM1802 - for RF Video capture and Analogue (Stereo) Audio
 Credits to sev5000 - [Detailed board build, PCB Gerber files for manufacturer and components needed](https://github.com/Sev5000/Pico2_12bitADC_PCMAudio)
