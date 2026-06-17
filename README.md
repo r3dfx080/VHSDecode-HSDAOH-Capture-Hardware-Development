@@ -79,7 +79,7 @@ Recommend full modification - or - modify for gain & VHS-Decode ready, is your c
 ### 3. Software install - misrc GUI & driver
 ```
 - Use the ready to install release of HSDAOH or build and install
-  For Windows release of https://github.com/machcnz/HSDAOH-MISRC-GUI) -- vhs-decode repo link to update this link soon.
+  For Windows, download and click install, see https://github.com/machcnz/HSDAOH-MISRC-GUI -- vhs-decode repo link to update this link soon.
 - Install MS2130 Driver - zadig included in release with instruction readme.
 
 ```
