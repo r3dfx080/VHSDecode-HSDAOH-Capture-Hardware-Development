@@ -72,7 +72,8 @@ Recommend full modification - or - modify for gain & VHS-Decode ready, is your c
 
 ### 2. Flash the RPI PICO 3
 ```
-- Pico 2 clipping LED firmware - see https://github.com/machcnz/hsdaoh-rp2350/releases/tag/Firmware-External-ADC
+- Pico 2 HSDAOH firmware with clipping indicator (Uses the built in PI PICO 2 Power LED)
+  see https://github.com/machcnz/hsdaoh-rp2350/releases/tag/Firmware-External-ADC
 
 ```
 
