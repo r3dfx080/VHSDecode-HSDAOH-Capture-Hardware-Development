@@ -86,7 +86,7 @@ Recommend full modification - or - modify for gain & VHS-Decode ready, is your c
 - Install MS2130 Driver - zadig included in release with instruction readme.
 
 
-### 3. Connect, test & capture
+### 4. Connect, test & capture
 
 
 
