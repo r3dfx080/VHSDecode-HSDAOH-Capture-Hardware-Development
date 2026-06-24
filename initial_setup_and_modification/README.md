@@ -52,10 +52,6 @@
 7. **R16** — **Replace** with 27Ω resistor _- Provides DC offset balance_ 
 8. **C3** — **Add** 6.8nF capacitor lifted at 45 deg in series with R16
 
-**After gain setup**
-
-![gain-mod-board-schematic.jpg](assets/schematic-gain-mod.JPG)
-
 
 ### LPF and other improvements
 
