@@ -1,8 +1,19 @@
 # AD9226 Module modification for VHS-Decode - ADC Capture - ~600mVp-p@050 Ohm FS
 
 > [!NOTE]  
-> Revision 0.3<br>
-> 14-06-2026
+> Revision 0.4<br>
+> 21-06-2026
+
+<!-- TOC -->
+* [Gain configuration](#gain-configuration)
+* [Configuration notes](#configuration-notes)
+  * [Gain table](#gain-table)
+* [Modification](#modification)
+  * [Gain setup](#gain-setup)
+    * [Visual guide](#visual-guide)
+  * [LPF and other improvements](#lpf-and-other-improvements)
+  * [BOM](#bom)
+<!-- TOC -->
 
 ## Gain configuration
 
@@ -12,8 +23,8 @@
 * R6 & R14 270Ω - **Do not change**
 
 > [!NOTE]  
-> SNR ~70dB <br>
-> SINAD ~ 98/70dB <br>
+> SNR ~70dB<br>
+> SINAD ~ 98/70dB<br>
 > ENOB ~ 11bits
 
 ### Gain table
@@ -29,10 +40,10 @@
 | 4.1          | 2.4k           | 0.6        |
 
 > [!CAUTION]
-> Values above 2.4k are not recommended due to lower SNR
+> **Values below 2.4k are not recommended** due to lower SNR
 
 > [!TIP]
-> Higher value rf/rg resistors -> higher Johnson noise <br>
+> Higher value rf/rg resistors lead to higher Johnson noise <br>
 > Analogue Devices AD8138 does not recommend rf <= 5k, I suggest rf <= 3k
 
 ## Modification
@@ -41,12 +52,17 @@
 
 ![schematic-stock.jpg](assets/schematic-stock.JPG)
 
+
+**Stock board view**
+
+![ADC9226-stock-board-photo.jpg](assets/ADC9226-stock-board-photo.jpg)
+
 ### Gain setup
 
 1. **R3, R5, R8, R17** - **Remove** 
 2. **R8 or R17 or R3** — **Add** 56Ω resistor 
-3. **R5** — **Add** the 0Ω resistor _- Optionally taken from R25_ 
-4. **R9 & R11** — **Replace** with 47Ω resistor 
+3. **R5** — **Add** 0Ω resistor _- Optionally taken from R25_ 
+4. **R9 & R11** — **Replace** with 47Ω resistors 
 5. **R2 & R14** — **Replace** with 2.2kΩ _- Recommended gain_ 
 6. **R6 & R13** — Replace with 270Ω resistors 
 7. **R16** — **Replace** with 27Ω resistor _- Provides DC offset balance_ 
@@ -60,12 +76,6 @@
 3. **C2a/b** — **Add** 2.2pF capacitor **in parallel** on top of **R2 & R14** _- Stability and slight LPF roll off_ 
 
 ![gain-mod-board-schematic.jpg](assets/schematic-gain-lpf-mod.JPG)
-
-### Board view
-
-**Stock**
-
-![ADC9226-stock-board-photo.jpg](assets/ADC9226-stock-board-photo.jpg)
 
 ### BOM
 
