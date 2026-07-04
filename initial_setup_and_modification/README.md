@@ -1,10 +1,11 @@
 # AD9226 Module modification for VHS-Decode - ADC Capture - ~600mVp-p@050 Ohm FS
 
 > [!NOTE]  
-> Revision 0.4<br>
-> 21-06-2026
+> Revision 0.5<br>
+> 08-07-2026
 
 <!-- TOC -->
+* [Fixing early ADC clipping](#fixing-early-adc-clipping)
 * [Gain configuration](#gain-configuration)
 * [Configuration notes](#configuration-notes)
   * [Gain table](#gain-table)
@@ -14,6 +15,25 @@
   * [LPF and other improvements](#lpf-and-other-improvements)
   * [BOM](#bom)
 <!-- TOC -->
+
+## Fixing early ADC clipping
+
+The design flaw is AD8183's _Pin 2_ `VCOM` being incorrectly connected 
+to the AD9226 _Pin 37_ `VREF` = 2V.
+
+Instead, the Opamp Pin 2 should be connected to AD9226 _Pin 45_ `CMLEVEL` = 2.5V.
+
+This is a problem which limits the opamp signal swing from a full 2V swing, impacting gain 
+and early ADC clipping.
+
+The fix is to:
+1. **Cut the track** between Pin 2 of AD8138 and Pin 37 of AD9226
+2. **Continuity test** the track has been cut
+3. **Add a** short **wire between C11** and **C42** - _This connects AD8138 Pin 2, to Pin 45 of AD9226_
+
+![ADC-clip-fix-steps.jpg](assets/ADC-clip-fix-steps.jpg)
+
+![ADC-clip-fix-done.jpg](assets/ADC-clip-fix-done.jpg)
 
 ## Gain configuration
 
@@ -44,7 +64,7 @@
 
 > [!TIP]
 > Higher value rf/rg resistors lead to higher Johnson noise <br>
-> Analogue Devices AD8138 does not recommend rf <= 5k, I suggest rf <= 3k
+> Analogue Devices AD8138 does not recommend rf >= 5k, I suggest rf >= 3k
 
 ## Modification
 
@@ -90,4 +110,7 @@
 | Capacitor  | 2.2 pF   | R2, R14    | 2        |
 | Capacitor  | 160 pF   | R9/R11     | 1        |
 
-**SMD, 0805**
+> [!NOTE]  
+> All SMD, 0805 size<br>
+> Resistor tolerance: 5% or less<br>
+> Capacitor voltage rating: 10V or more
