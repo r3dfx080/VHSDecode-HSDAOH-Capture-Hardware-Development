@@ -86,7 +86,7 @@ The fix is to:
 5. **R2 & R14** — **Replace** with 2.2kΩ _- Recommended gain_ 
 6. **R6 & R13** — Replace with 270Ω resistors 
 7. **R16** — **Replace** with 27Ω resistor _- Provides DC offset balance_ 
-8. **C3** — **Add** 6.8nF capacitor lifted at 45 deg in series with R16
+8. **C3** — **Add** 12nF capacitor lifted at 45 deg in series with R16
 
 
 ### LPF and other improvements
