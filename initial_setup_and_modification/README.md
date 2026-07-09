@@ -60,7 +60,7 @@ The fix is to:
 | 4.1          | 2.4k           | 0.6        |
 
 > [!CAUTION]
-> **Values below 2.4k are not recommended** due to lower SNR
+> **Values above 2.4k are not recommended** due to lower SNR
 
 > [!TIP]
 > Higher value rf/rg resistors lead to higher Johnson noise <br>
