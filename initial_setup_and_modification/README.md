@@ -89,24 +89,17 @@ The fix is to:
 
 #### Visual guide
 <details>
-<summary>Step by step visual guide</summary>
-
-![gain-mod-step-1.jpg](assets/assets/gain_mod_steps/gain-mod-step-1.jpg)
-
-![gain-mod-step-2.jpg](assets/assets/gain_mod_steps/gain-mod-step-2.jpg)
-
-![gain-mod-step-3.jpg](assets/assets/gain_mod_steps/gain-mod-step-3.jpg)
-
-![gain-mod-step-4.jpg](assets/assets/gain_mod_steps/gain-mod-step-4.jpg)
-
-![gain-mod-step-5.jpg](assets/assets/gain_mod_steps/gain-mod-step-5.jpg)
-
-![gain-mod-step-6.jpg](assets/assets/gain_mod_steps/gain-mod-step-6.jpg)
-
-![gain-mod-step-7.jpg](assets/assets/gain_mod_steps/gain-mod-step-7.jpg)
-
-![gain-mod-step-8.jpg](assets/assets/gain_mod_steps/gain-mod-step-8.jpg)
-
+  <summary>Step by step visual guide</summary
+                                     
+  ![gain-mod-step-1.jpg](assets/gain_mod_steps/gain-mod-step-1.jpg)
+  ![gain-mod-step-2.jpg](assets/gain_mod_steps/gain-mod-step-2.jpg)
+  ![gain-mod-step-3.jpg](assets/gain_mod_steps/gain-mod-step-3.jpg)
+  ![gain-mod-step-4.jpg](assets/gain_mod_steps/gain-mod-step-4.jpg)
+  ![gain-mod-step-5.jpg](assets/gain_mod_steps/gain-mod-step-5.jpg)
+  ![gain-mod-step-6.jpg](assets/gain_mod_steps/gain-mod-step-6.jpg)
+  ![gain-mod-step-7.jpg](assets/gain_mod_steps/gain-mod-step-7.jpg)
+  ![gain-mod-step-8.jpg](assets/gain_mod_steps/gain-mod-step-8.jpg)
+  
 </details>
 
 ### LPF and other improvements
