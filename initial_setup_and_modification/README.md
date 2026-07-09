@@ -85,7 +85,7 @@ The fix is to:
 5. **R2 & R14** — **Replace** with 2.2kΩ _- Recommended gain_ 
 6. **R6 & R13** — **Replace** with 270Ω resistors 
 7. **R16** — **Replace** with 27Ω resistor _- Provides DC offset balance_ 
-8. **C3** — **Add** 6.8nF capacitor lifted at 45 deg in series with **R16**
+8. **C3** — **Add** 12nF capacitor lifted at 45 deg in series with **R16**
 
 #### Visual guide
 <details>
@@ -104,7 +104,7 @@ The fix is to:
 
 ### LPF and other improvements
 
-1. **R25** - **Replace** with 6.8nF capacitor 
+1. **R25** - **Replace** with 12nF capacitor 
 2. **C6lpf** — **Add** on the AD9226 side and **across R9/R11** add 160pF _- Provides 1-pole -3db@10MHz LPF & ADC kickback suppression_ 
 3. **C2a/b** — **Add** 2.2pF capacitor **in parallel** on top of **R2 & R14** _- Stability and slight LPF roll off_ 
 
